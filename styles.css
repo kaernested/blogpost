@@ -1,0 +1,254 @@
+body {
+  padding: 0;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+}
+
+.container {
+  padding: 48px 32px;
+  margin: 0 auto;
+}
+
+.inputCustom {
+  height: 40px;
+  width: 240px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.textareaCustom {
+  height: 80px;
+  width: 240px;
+  border: none;
+  border: 1px solid black;
+}
+
+.navWrapper {
+  padding: 0 24px;
+}
+.navWrapper a {
+  text-decoration: none;
+  color: #080808;
+}
+.navWrapper .navContainer {
+  height: 80px;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+}
+.navWrapper .navContent {
+  display: flex;
+  padding-inline-start: 0;
+  align-items: center;
+}
+.navWrapper li {
+  padding: 16px;
+  text-decoration: none;
+  list-style-type: none;
+  width: 120px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.navWrapper li a:hover {
+  color: #3d3d3d;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease-in;
+}
+.navWrapper .logo {
+  color: #080808;
+  font-size: 24px;
+  font-weight: 600;
+}
+.navWrapper .searchWrapper {
+  border-bottom: 1px solid Black;
+}
+.navWrapper .searchWrapper .fa-search {
+  color: #D2D2D2;
+}
+.navWrapper .searchWrapper .searchInput {
+  background-color: white;
+  border: none;
+  height: 24px;
+  width: 240px;
+  font-size: 14px;
+  color: #080808;
+  font-family: "Playfair Display", serif;
+}
+
+.blogWrapper {
+  display: flex;
+}
+.blogWrapper .blog {
+  width: 320px;
+  height: 360px;
+  box-shadow: 3px 13px 32px -2px #c4c4c4;
+  padding: 48px 32px 32px 32px;
+  margin: 80px 40px;
+}
+
+.alertWarning {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.alertWarning .alertText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 240px;
+  background-color: #080808;
+  color: #f8f8f8;
+}
+.alertWarning img {
+  height: 480px;
+  width: 480px;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginContainer .emailWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginContainer .passwordWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.loginContainer .loginBtn {
+  border: none;
+  background-color: #080808;
+  color: #f8f8f8;
+  height: 40px;
+  width: 240px;
+  margin-top: 32px;
+  font-family: "Playfair Display", serif;
+}
+
+.loggedIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loggedIn .logOutBtn {
+  border: none;
+  background-color: #080808;
+  color: #f8f8f8;
+  height: 40px;
+  width: 240px;
+  margin-top: 32px;
+  font-family: "Playfair Display", serif;
+}
+
+.alertSuccess {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.alertSuccess .alertText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 240px;
+  background-color: #080808;
+  color: #f8f8f8;
+}
+.alertSuccess img {
+  height: 480px;
+  width: 480px;
+}
+
+.submitBtn {
+  border: none;
+  background-color: #080808;
+  color: #f8f8f8;
+  height: 40px;
+  width: 240px;
+  font-family: "Playfair Display", serif;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 200px;
+  font-family: "Playfair Display", serif;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #080808;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #080808;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=styles.css.map */
